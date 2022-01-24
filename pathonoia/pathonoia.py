@@ -3,6 +3,7 @@
 
 #import csv
 import pandas as pd
+import os
 
 def evalKrakenAlign(outdir_prefix, unmappedreads, nucCutOff, logfile):
     krakenreportfile = outdir_prefix + "_krakenreport.txt"
@@ -155,4 +156,52 @@ def mergeNucTaxDataframes(allNucPerTax):
     workingDF.drop("rowSum", axis = 1, inplace=True)
     return(workingDF)
     
+samTOOLs = "samtools "
 
+def samToolsCmdExtractUnaligned(outdir_prefix):
+    samPARAMETERS = "view -hb -f 4 "
+    samplePARAMETER = outdir_prefix + "_staralign.bam"
+    output = " > " + outdir_prefix + "_humanUnmapped.bam"
+    cmd = samTOOLs + samPARAMETERS + samplePARAMETER + output
+    return(cmd)   
+    
+def samToolsCmdUnalignedToFA(outdir_prefix):
+    samPARAMETERS = "view "
+    samplePARAMETER = outdir_prefix + "_humanUnmapped.bam"
+    awkCMD =  " | awk '{OFS=\"\\t\"; print \">\"$1\"\\n\"$10}'"
+    output = " - > " + outdir_prefix + "_humanUnmapped.fa"
+    cmd = samTOOLs + samPARAMETERS + samplePARAMETER + awkCMD + output
+    return(cmd)  
+
+def checkKrakenInstall(krakenTOOL,krakenDB):
+    if os.path.isfile(krakenTOOL) and os.path.isdir(krakenDB):
+        return(True)
+    else: 
+        return(False)
+    
+def mergeNucTaxDataframes(allNucPerTax):
+    infocols = ['species_name', 'phylo_level', 'parent']
+    
+    sampleList = list(allNucPerTax.keys())
+    listOfTaxInfo = []
+    for sample, df in allNucPerTax.items():
+        listOfTaxInfo.append(df[infocols])
+
+    taxInfoDF = pd.concat(listOfTaxInfo)
+    taxInfoDF = taxInfoDF.drop_duplicates()
+    
+    workingDF = allNucPerTax[sampleList[0]]    
+    workingDF.drop(infocols, axis=1, inplace=True)
+    workingDF.columns = [sampleList[0]]
+    for i in range(1,len(sampleList)):
+        toBeAddedDF = allNucPerTax[sampleList[i]]
+        toBeAddedDF.drop(infocols, axis=1, inplace=True)
+        toBeAddedDF.columns = [sampleList[i]]
+        workingDF = pd.concat([workingDF, toBeAddedDF], axis=1, sort=False)
+
+    workingDF["rowSum"] = workingDF.sum(axis = 1)
+    workingDF = pd.concat([taxInfoDF,workingDF], axis = 1, sort=False)
+    workingDF.sort_values(by = 'rowSum', ascending=0, inplace = True)
+    workingDF.drop("rowSum", axis = 1, inplace=True)
+    return(workingDF)
+ 
