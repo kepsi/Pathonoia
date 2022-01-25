@@ -1,0 +1,50 @@
+  5.37	671	671	U	0	unclassified
+ 94.63	11829	5	R	1	root
+ 94.59	11824	0	R1	131567	  cellular organisms
+ 94.59	11824	7	D	2	    Bacteria
+ 94.40	11800	2	P	1224	      Proteobacteria
+ 94.38	11798	10	C	1236	        Gammaproteobacteria
+ 93.82	11727	0	O	135625	          Pasteurellales
+ 93.82	11727	43	F	712	            Pasteurellaceae
+ 93.47	11684	161	G	724	              Haemophilus
+ 91.86	11483	11464	S	727	                Haemophilus influenzae
+  0.10	12	12	S1	262728	                  Haemophilus influenzae R2866
+  0.04	5	5	S1	374930	                  Haemophilus influenzae PittEE
+  0.01	1	1	S1	262727	                  Haemophilus influenzae R2846
+  0.01	1	1	S1	1334187	                  Haemophilus influenzae KR494
+  0.27	34	0	G1	2609962	                unclassified Haemophilus
+  0.27	34	34	S	712310	                  Haemophilus sp. oral taxon 036
+  0.05	6	6	S	726	                Haemophilus haemolyticus
+  0.33	41	1	O	91347	          Enterobacterales
+  0.25	31	8	F	543	            Enterobacteriaceae
+  0.15	19	0	G	590	              Salmonella
+  0.15	19	0	S	28901	                Salmonella enterica
+  0.15	19	0	S1	59201	                  Salmonella enterica subsp. enterica
+  0.15	19	0	S2	57045	                    Salmonella enterica subsp. enterica serovar Paratyphi B
+  0.15	19	19	S3	1016998	                      Salmonella enterica subsp. enterica serovar Paratyphi B str. SPB7
+  0.03	4	0	G	570	              Klebsiella
+  0.03	4	1	S	573	                Klebsiella pneumoniae
+  0.02	3	3	S1	72407	                  Klebsiella pneumoniae subsp. pneumoniae
+  0.06	8	0	F	1903414	            Morganellaceae
+  0.06	8	0	G	583	              Proteus
+  0.06	8	8	S	584	                Proteus mirabilis
+  0.01	1	0	F	1903411	            Yersiniaceae
+  0.01	1	0	G	629	              Yersinia
+  0.01	1	1	S	631	                Yersinia intermedia
+  0.16	20	0	O	118969	          Legionellales
+  0.16	20	0	F	118968	            Coxiellaceae
+  0.16	20	20	G	776	              Coxiella
+  0.14	17	0	D1	1783272	      Terrabacteria group
+  0.10	12	0	P	67819	        Armatimonadetes
+  0.10	12	0	C	1077257	          Chthonomonadetes
+  0.10	12	0	O	1077263	            Chthonomonadales
+  0.10	12	0	F	1077264	              Chthonomonadaceae
+  0.10	12	0	G	1077265	                Chthonomonas
+  0.10	12	0	S	454171	                  Chthonomonas calidirosea
+  0.10	12	12	S1	1303518	                    Chthonomonas calidirosea T49
+  0.04	5	0	P	1239	        Firmicutes
+  0.04	5	0	C	91061	          Bacilli
+  0.04	5	0	O	1385	            Bacillales
+  0.04	5	0	F	186822	              Paenibacillaceae
+  0.04	5	0	G	44249	                Paenibacillus
+  0.04	5	5	S	1619311	                  Paenibacillus physcomitrellae
