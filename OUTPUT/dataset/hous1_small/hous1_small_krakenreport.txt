@@ -1,0 +1,18 @@
+100.00	12500	0	R	1	root
+100.00	12500	0	R1	131567	  cellular organisms
+100.00	12500	0	D	2	    Bacteria
+100.00	12500	256	P	1224	      Proteobacteria
+ 97.95	12244	26	C	1236	        Gammaproteobacteria
+ 97.74	12218	0	O	72274	          Pseudomonadales
+ 97.74	12218	0	F	135621	            Pseudomonadaceae
+ 97.74	12218	219	G	286	              Pseudomonas
+ 95.99	11999	0	G1	136841	                Pseudomonas aeruginosa group
+ 95.99	11999	11825	S	287	                  Pseudomonas aeruginosa
+  1.19	149	149	S1	208963	                    Pseudomonas aeruginosa UCBPP-PA14
+  0.10	13	13	S1	208964	                    Pseudomonas aeruginosa PAO1
+  0.02	3	3	S1	1280938	                    Pseudomonas aeruginosa B136-33
+  0.02	3	3	S1	1400868	                    Pseudomonas aeruginosa VRFPA04
+  0.02	2	2	S1	1415629	                    Pseudomonas aeruginosa MTB-1
+  0.02	2	2	S1	1009714	                    Pseudomonas aeruginosa PAK
+  0.01	1	1	S1	798130	                    Pseudomonas aeruginosa 39016
+  0.01	1	1	S1	1352355	                    Pseudomonas aeruginosa c7447m
