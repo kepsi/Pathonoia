@@ -14,7 +14,7 @@ def evalKrakenAlign(outdir_prefix, unmappedreads, nucCutOff, logfile):
     nucPerTax.to_csv(outdir_prefix+ "_nucleotiesPerTaxID.csv")
     return(nucPerTax)
 
-def evaluateXmerMap(xmerMap, krakenReportFile, nucCutOff = 50):
+def evaluateXmerMap(xmerMap, krakenReportFile, nucCutOff = 100):
     
     taxInfo = getTaxInfoFromKrakenReportFile(krakenReportFile) 
     taxMap = dict()
