@@ -7,11 +7,11 @@ This repository contains the software (Python Package and Jupyter Notebook) desc
 The `pathonoia_notebook` Jupyter Notebook in the top directory shows the use of the Python package for a whole dataset.
 To reproduce the results published in the article and getting Pathonoia to work with minimal efforts, we provide a precompiled Kraken database here:
 
-[oasis.ims.bio/kraken2_k31.zip](oasis.ims.bio/kraken2_k31.zip) or [oasis.dzne.de/kraken2_31.zip](oasis.dzne.de/kraken2_31.zip) (March 2019)
+[oasis.ims.bio/kraken2_k31.zip](https://oasis.ims.bio/kraken2_k31.zip) or [oasis.dzne.de/kraken2_31.zip](https://oasis.dzne.de/kraken2_31.zip) (March 2019)
 
 An updated version of the index is provided here:
 
-[oasis.ims.bio/kraken2_k31_2205.zip](oasis.ims.bio/kraken2_k31_2205.zip) or [oasis.dzne.de/kraken2_31_2205.zip](oasis.dzne.de/kraken2_31_2205.zip) (May 2022)
+[oasis.ims.bio/kraken2_k31_2205.zip](https://oasis.ims.bio/kraken2_k31_2205.zip) or [oasis.dzne.de/kraken2_31_2205.zip](https://oasis.dzne.de/kraken2_31_2205.zip) (May 2022)
 
 The Jupyter Notebook also explains the setup of Kraken index for Pathonoia if an adjusted version is desired. 
 Be aware that Pathonoia is build for Kraken indexes that have k=l, i.e. minimizer size = k-mer size. 
