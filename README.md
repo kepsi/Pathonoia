@@ -9,7 +9,8 @@ To reproduce the results published in the article and getting Pathonoia to work 
 
 [oasis.ims.bio/kraken2_k31.zip](oasis.ims.bio/kraken2_k31.zip) or [oasis.dzne.de/kraken2_31.zip](oasis.dzne.de/kraken2_31.zip) (March 2019)
 
-An updated version of the index
+An updated version of the index is provided here:
+
 [oasis.ims.bio/kraken2_k31_2205.zip](oasis.ims.bio/kraken2_k31_2205.zip) or [oasis.dzne.de/kraken2_31_2205.zip](oasis.dzne.de/kraken2_31_2205.zip) (May 2022)
 
 The Jupyter Notebook also explains the setup of Kraken index for Pathonoia if an adjusted version is desired. 
