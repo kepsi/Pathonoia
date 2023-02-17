@@ -2,7 +2,7 @@
 
 This repository contains the software (Python Package and Jupyter Notebook) descibed in:
 
-- **Pathogen Detection in RNA-Seq Data with Pathonoia**, Anna-Maria Liebhoff, Kevin Menden, Alena Laschtowitz, Andre Franke, Christoph Schramm, Stefan Bonn. *bioRxiv* 2022.01.19.476681; doi: https://doi.org/10.1101/2022.01.19.476681 
+- Liebhoff, AM. et al. **Pathogen detection in RNA-seq data with Pathonoia**. *BMC Bioinformatics* 24, 53 (2023). https://doi.org/10.1186/s12859-023-05144-z
 
 The `pathonoia_notebook` Jupyter Notebook in the top directory shows the use of the Python package for a whole dataset.
 To reproduce the results published in the article and getting Pathonoia to work with minimal efforts, we provide a precompiled Kraken database here:
